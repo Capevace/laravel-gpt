@@ -37,8 +37,8 @@ class GPTServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('laravel-gpt')
-            ->hasConfigFile('gpt');
+            ->name('gpt')
+            ->hasConfigFile();
         // ->hasCommand(LaravelGptCommand::class);
     }
 }
