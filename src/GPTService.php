@@ -77,7 +77,7 @@ class GPTService
         if ($this->shouldLog) {
             Storage::disk('gpt')
                 ->put(
-                    'offer-' . Str::uuid() . '.json',
+                    'offer-'.Str::uuid().'.json',
                     json_encode(
                         [
                             'prompt' => $prompt,
