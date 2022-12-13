@@ -1,13 +1,23 @@
-# A Laravel package for interacting with OpenAI's GPT-3.
-
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/capevace/laravel-gpt.svg?style=flat-square)](https://packagist.org/packages/capevace/laravel-gpt)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/capevace/laravel-gpt/run-tests?label=tests)](https://github.com/capevace/laravel-gpt/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/capevace/laravel-gpt/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/capevace/laravel-gpt/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/capevace/laravel-gpt.svg?style=flat-square)](https://packagist.org/packages/capevace/laravel-gpt)
-
-This package provides a **type-safe** interface for making requests to the GPT-3 API.
-
-#### Example
+<div align="center">
+	<a href="https://github.com/capevace/laravel-gpt">
+		<img src="https://user-images.githubusercontent.com/10093858/207289815-1656ca5a-9473-4c32-a099-35f20ff0f60c.png" width="200">
+	</a>
+	<h1>laravel-gpt</h1>
+	<p>
+		This package provides a <strong>type-safe</strong> interface for making requests to the <a href="https://beta.openai.com/docs/api-reference/introduction">GPT-3 API</a>.
+	</p>
+	<p>
+		<a href="https://packagist.org/packages/capevace/laravel-gpt">
+            <img src="https://img.shields.io/packagist/v/capevace/laravel-gpt.svg?style=flat-square" alt="Latest Version on Packagist" />
+        </a>
+        <a href="https://github.com/capevace/laravel-gpt/actions?query=workflow%3Arun-tests+branch%3Amain">
+            <img src="https://img.shields.io/github/workflow/status/capevace/laravel-gpt/run-tests?label=tests" alt="GitHub Tests Action Status" />
+        </a>
+        <a href="https://packagist.org/packages/capevace/laravel-gpt">
+            <img src="https://img.shields.io/packagist/dt/capevace/laravel-gpt.svg?style=flat-square" alt="Total Downloads" />
+        </a>
+	</p>
+</div>
 
 ```php
 use Capevace\GPT\Facades\GPT;
@@ -21,6 +31,8 @@ $response = GPT::generate(
 
 echo $response->first(); // "The sky"
 ```
+
+<br />
 
 ## Installation
 
