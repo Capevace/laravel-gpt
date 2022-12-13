@@ -90,25 +90,4 @@ class GPTService
 
         return $response;
     }
-
-    /**
-     * Sends a request to the GPT3 API and parses the generated text.
-     *
-     * The text we want is enclosed in a @template block and ends with @endtemplate.
-     */
-    public function generateOfferDescriptions(GPTOfferDescriptions $gpt)
-    {
-        $prompt = view('gpt.offer-description', ['data' => json_encode($gpt, JSON_PRETTY_PRINT)])
-            ->render();
-
-        $response = $this->generate(
-            prompt: $prompt,
-            stop: '@endtemplate',
-        );
-
-        $result = str($response->first())
-            ->beforeLast('@endtemplate');
-
-        return $result;
-    }
 }
