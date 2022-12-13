@@ -2,7 +2,6 @@
 
 namespace Capevace\GPT;
 
-use Capevace\GPT\Serializable\{GPTOfferDescriptions};
 use Capevace\GPT\Support\GPTException;
 use Capevace\GPT\Support\GPTResponse;
 use Illuminate\Support\Facades\Storage;
@@ -78,7 +77,7 @@ class GPTService
         if ($this->shouldLog) {
             Storage::disk('gpt')
                 ->put(
-                    'offer-'.Str::uuid().'.json',
+                    'offer-' . Str::uuid() . '.json',
                     json_encode(
                         [
                             'prompt' => $prompt,
