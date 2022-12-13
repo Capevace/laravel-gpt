@@ -2,5 +2,5 @@
 
 // config for capevace/laravel-gpt
 return [
-    'api_key' => env('OPENAI_API_KEY')
+    'api_key' => env('OPENAI_API_KEY'),
 ];

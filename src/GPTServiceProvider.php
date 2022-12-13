@@ -29,8 +29,6 @@ class GPTServiceProvider extends PackageServiceProvider
         });
     }
 
-
-
     public function configurePackage(Package $package): void
     {
         /*
