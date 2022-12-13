@@ -38,7 +38,7 @@ class GPTServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-gpt')
-            ->hasConfigFile();
+            ->hasConfigFile('gpt');
         // ->hasCommand(LaravelGptCommand::class);
     }
 }
