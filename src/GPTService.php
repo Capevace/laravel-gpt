@@ -3,15 +3,14 @@
 namespace Capevace\GPT;
 
 use Capevace\GPT\Serializable\{GPTOfferDescriptions};
-use Capevace\GPT\Support\{GPTException, GPTResponse};
-
-use Illuminate\Support\Str;
+use Capevace\GPT\Support\GPTException;
+use Capevace\GPT\Support\GPTResponse;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 use Orhanerday\OpenAi\OpenAi;
 
 /**
  * The GPTService class is a service class that provides an interface for making requests to the GPT-3 API.
- *
  */
 class GPTService
 {
@@ -42,14 +41,15 @@ class GPTService
     /**
      * Sends a request to the GPT3 API.
      *
-     * @param string $prompt The prompt to send to the API.
-     * @param string $model The model to use.
-     * @param float $temperature
-     * @param int $maxTokens
-     * @param ?string $stop
-     * @param float $frequencyPenalty
-     * @param float $presencePenalty
+     * @param  string  $prompt The prompt to send to the API.
+     * @param  string  $model The model to use.
+     * @param  float  $temperature
+     * @param  int  $maxTokens
+     * @param  ?string  $stop
+     * @param  float  $frequencyPenalty
+     * @param  float  $presencePenalty
      * @return GPTResponse
+     *
      * @throws GPTException
      */
     public function generate(
@@ -78,7 +78,7 @@ class GPTService
         if ($this->shouldLog) {
             Storage::disk('gpt')
                 ->put(
-                    'offer-' . Str::uuid() . '.json',
+                    'offer-'.Str::uuid().'.json',
                     json_encode(
                         [
                             'prompt' => $prompt,

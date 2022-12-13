@@ -2,7 +2,6 @@
 
 namespace Capevace\GPT;
 
-use Capevace\GPT\GPTService;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
