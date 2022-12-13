@@ -1,6 +1,6 @@
 <?php
 
-namespace Capevace\GPT\Providers;
+namespace Capevace\GPT;
 
 use Capevace\GPT\GPTService;
 use Spatie\LaravelPackageTools\Package;
