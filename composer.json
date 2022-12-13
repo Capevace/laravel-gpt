@@ -42,13 +42,12 @@
     },
     "autoload": {
         "psr-4": {
-            "capevace\\LaravelGpt\\": "src",
-            "capevace\\LaravelGpt\\Database\\Factories\\": "database/factories"
+            "Capevace\\GPT\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "capevace\\LaravelGpt\\Tests\\": "tests"
+            "Capevace\\GPT\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -68,10 +67,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "capevace\\LaravelGpt\\LaravelGptServiceProvider"
+                "Capevace\\GPT\\GPTServiceProvider"
             ],
             "aliases": {
-                "LaravelGpt": "capevace\\LaravelGpt\\Facades\\LaravelGpt"
+                "GPT": "Capevace\\GPT\\Facades\\GPT"
             }
         }
     },
