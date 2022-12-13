@@ -2,7 +2,7 @@
 
 All notable changes to `laravel-gpt` will be documented in this file.
 
-## [Unreleased](https://github.com/capevace/laravel-gpt/compare/v1.0.0...HEAD)
+## [Unreleased](https://github.com/capevace/laravel-gpt/compare/1.0.0...HEAD)
 
 ### Removed
 
