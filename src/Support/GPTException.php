@@ -9,14 +9,10 @@ use Exception;
  */
 class GPTException extends Exception
 {
-    protected string $type;
-
     public function __construct(
         string $message,
-        string $type
+        public readonly string $type
     ) {
         parent::__construct($message);
-
-        $this->type = $type;
     }
 }

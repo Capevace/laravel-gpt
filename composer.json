@@ -75,11 +75,5 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../laravel-gpt"
-        }
-    ]
+    "prefer-stable": true
 }

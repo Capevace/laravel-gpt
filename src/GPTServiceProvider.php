@@ -7,27 +7,29 @@ use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class GPTServiceProvider extends PackageServiceProvider
 {
-    /**
-     * Register any application services.
-     *
-     * @return void
-     */
-    public function register()
-    {
-        //
-    }
+    // /**
+    //  * Register any application services.
+    //  *
+    //  * @return void
+    //  */
+    // public function register()
+    // {
+    //     //
+    // }
 
     /**
      * Bootstrap any application services.
      *
      * @return void
      */
-    public function boot()
+    public function packageBooted()
     {
         $this->app->bind(GPTService::class, function ($app) {
             return new GPTService();
         });
     }
+
+
 
     public function configurePackage(Package $package): void
     {

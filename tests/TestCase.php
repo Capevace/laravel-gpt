@@ -2,7 +2,7 @@
 
 namespace Capevace\GPT\Tests;
 
-use Capevace\GPT\Providers\GPTServiceProvider;
+use Capevace\GPT\GPTServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra

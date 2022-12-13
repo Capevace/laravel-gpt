@@ -2,7 +2,8 @@
 
 namespace Capevace\GPT\Facades;
 
-use Capevace\GPT\Services\GPTService;
+use Capevace\GPT\GPTService;
+use Capevace\GPT\Support\GPTResponse;
 use Illuminate\Support\Facades\Facade;
 
 /**
